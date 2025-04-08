@@ -1,0 +1,216 @@
+body {
+    background-color: #A56CC1 !important; /* Imposta lo stesso colore della navbar */
+    margin: 0; /* Rimuove eventuali margini di default */
+    padding: 0; /* Rimuove eventuali padding di default */
+}
+
+.letter-background {
+    background-color: #C792EA; /* Colore di sfondo bianco */
+    width: 50%; /* Imposta una larghezza al 50% (puoi modificarla in base alle tue necessità) */
+    padding: 40px; /* Padding per aggiungere spazio attorno alla lettera */
+    padding: 40px; /* Padding per aggiungere spazio attorno alla lettera */
+    border-radius: 20px; /* Bordo arrotondato */
+    margin: 0 auto; /* Centra il contenitore */
+    margin-top: 20px; /* Distanza dalla navbar */
+    box-shadow: 0 4px 10px #fffefe; /* Aggiungi un'ombra leggera */
+    animation: shadowAnimation 2s infinite alternate; /* Animazione per l'ombra */
+}
+
+.letter-container {
+    font-family: 'Baloo 2', cursive; 
+    font-size: 10px; /* Dimensione della lettera ridotta */
+    color: #000000; /* Colore della lettera */
+}
+
+/* Animazione per l'ombra */
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.navbar {
+    background-color: #A56CC1; /* Cambia il colore della navbar */
+}
+
+.navbar .container-md {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aggiunge spazio tra il logo e il titolo */
+}
+
+.navbar-logo {
+  height: 60px;
+  width: auto;
+  border: none !important;
+  outline: none !important;
+  display: block;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  image-rendering: smooth;
+}
+
+.navbar .navbar-brand {
+  margin-left: 10px;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #f0f0f0;
+}
+
+@media (max-width: 767px) {
+  .navbar .container-md {
+    flex-direction: row; /* Rende il layout in riga anche su mobile */
+    justify-content: space-between; /* Spazio tra il logo e il titolo */
+  }
+
+  .navbar-logo {
+    height: 60px; /* Riduci leggermente l'altezza del logo su mobile */
+  }
+
+  .navbar .navbar-brand {
+    font-size: 20px; /* Riduci la dimensione del testo su mobile */
+  }
+
+ .letter-background {
+    width: 90%; /* Riduci la larghezza per schermi con larghezza fino a 767px */
+    padding: 10px; /* Riduci il padding per risparmiare spazio */
+    margin-top: 15px; /* Riduci la distanza dalla navbar */
+    box-shadow: 0 4px 10px #fffefe; /* Mantieni l'ombra */
+    animation: shadowAnimation 2s infinite alternate; /* Mantieni l'animazione */
+    border-radius: 20px; /* Mantieni il bordo arrotondato */
+    background-color: #C792EA; /* Mantieni il colore di sfondo */
+}
+
+ .letter-container {
+    font-size: 15px; /* Aumenta ancora la dimensione del font */
+    line-height: 1.5; /* Aumenta l'interlinea per una migliore leggibilità */
+    padding-left: 10px; /* Distanza dal bordo */
+}
+}
+
+@media (max-width: 480px) {
+  .navbar .container-md {
+    flex-direction: row; /* Assicurati che anche sugli schermi più piccoli siano su una riga */
+    align-items: center; /* Centra gli elementi verticalmente */
+    justify-content: space-between; /* Spazio tra il logo e il titolo */
+  }
+
+  .navbar-logo {
+    height: 50px; /* Riduci ulteriormente l'altezza del logo per schermi molto piccoli */
+  }
+
+  .letter-background {
+    width: 90%; /* Rende il contenitore ancora più largo su dispositivi mobili */
+    padding: 20px; /* Riduce il padding per adattarsi meglio agli schermi piccoli */
+}
+
+  .letter-container {
+    font-size: 20px; /* Aumenta ulteriormente la dimensione del font */
+}
+
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;  /* Copre tutto senza deformare */
+  background-position: center center;  /* Centra l'immagine */
+  margin: 20px; /* Margine per separare le card */
+}
+
+.card img {
+  display: none;  /* Nascondi l'immagine originale */
+}
+
+.card .card-img-top {
+  width: 100%;
+  height: 200px; /* Altezza fissa per le immagini */
+  object-fit: cover; /* Mantiene il rapporto d'aspetto */
+}
+
+.card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: transparent; /* Sfondo completamente trasparente */
+}
+
+.card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* Bianco pieno */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Per migliorare la leggibilità */
+}
+
+.card .card-text {
+  font-size: 13px;
+  color:  #F5F3F7;         /* Bianco pieno */
+  opacity: 1;           /* Leggera trasparenza se vuoi */
+  font-family: 'Baloo 2', cursive; 
+}
+
+
+.card .btn {
+  background-color: #A56CC1; /* Colore del pulsante */
+  color: #fff; /* Colore del testo del pulsante */
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.carousel {
+  touch-action: pan-y;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+/* Impostare l'altezza per le immagini dei caroselli */
+.carousel-inner img {
+  height: 500px; /* Imposta un'altezza fissa per tutte le immagini */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;  /* Copre tutto senza deformare */
+  background-position: center center;  /* Centra l'immagine */
+}
+
+
+
+/* Per dispositivi molto piccoli puoi abbassare l'altezza */
+@media (max-width: 576px) {
+  .card .card-img-top {
+    height: 50px; /* Altezza fissa per le immagini */
+  }
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #A56CC1; /* Colore di sfondo della navbar */
+  margin-top: 20px; /* Spazio sopra il footer */
+}
+
+.small {
+  font-size: 0.9rem; /* Riduce la grandezza della descrizione */
+}
