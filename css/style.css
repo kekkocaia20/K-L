@@ -17,7 +17,7 @@ body {
 }
 
 .letter-container {
-    font-family: 'Baloo 2', cursive; 
+    font-family: 'Pacifico', cursive;
     font-size: 10px; /* Dimensione della lettera ridotta */
     color: #000000; /* Colore della lettera */
 }
@@ -164,7 +164,7 @@ body {
   font-size: 13px;
   color:  #F5F3F7;         /* Bianco pieno */
   opacity: 1;           /* Leggera trasparenza se vuoi */
-  font-family: 'Baloo 2'; 
+  font-family: 'Pacifico', cursive;  
 }
 
 
